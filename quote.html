@@ -2,4 +2,25 @@
  Your Random Quote here
 </div>
 
-<button id="quoteGenerator"> Click me to generate a random quote </button>
+<a rel="nofollow" rel="noreferrer"id="tweetbutton" class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=Quote%20Of%20The%20Day" data-size="large"> Share
+</a>
+
+<button id="quoteGenerator"> New Quote </button>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
